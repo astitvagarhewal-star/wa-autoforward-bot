@@ -1,0 +1,14 @@
+# Node dependencies
+node_modules/
+
+# WhatsApp Session Data (CRITICAL)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Configuration & Secrets
+config.json
+.env
+
+# Backup files and flags
+*.tar.gz
+.bot_offline_flag

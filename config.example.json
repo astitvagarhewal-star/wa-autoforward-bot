@@ -1,0 +1,9 @@
+{
+  "whitelist": "1234567890, 0987654321",
+  "targetChat": "TARGET_CHAT_ID",
+  "telegramToken": "YOUR_BOT_TOKEN",
+  "telegramChatId": "LOG_CHANNEL_ID",
+  "telegramHeartbeat": false,
+  "passphrase": "YOUR_PASSPHRASE_HERE",
+  "passphraseEnabled": false
+}
