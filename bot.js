@@ -719,6 +719,8 @@ client.on('message', async (msg) => {
             setTimeout(() => { nextTask.unlock(); }, cooldownMs);
         } else {
             globalQueue.isBusy = false; // Unlock completely
+            // Fallback safety: Force offline when queue empties in case a skipped message left it hanging
+            try { await client.sendPresenceUnavailable(); } catch (e) {}
         }
                 
             } catch (error) {
@@ -733,6 +735,8 @@ client.on('message', async (msg) => {
             setTimeout(() => { nextTask.unlock(); }, errorCooldownMs);
         } else {
             globalQueue.isBusy = false;
+            // Fallback safety: Force offline when queue empties in case a skipped message left it hanging
+            try { await client.sendPresenceUnavailable(); } catch (e) {}
         }
             }
         
