@@ -292,8 +292,8 @@ const HTML_UI = `
 
     <div style="font-size: 0.85em; color: #666; font-family: sans-serif; line-height: 1.4;">
         &copy; 2026 Jaival. <br>
-        Free for FOSS & personal use with attribution. <br>
-        Commercial use requires a profit-sharing agreement.
+        Distributed under the MIT License. <br>
+        Free for personal and commercial use.
     </div>
 </footer>
 
