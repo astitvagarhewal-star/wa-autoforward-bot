@@ -19,6 +19,13 @@ A highly resilient, headless WhatsApp bot designed to run natively on Android vi
 ## 🐛 Bugs & Feature Requests
 Have an idea to make this bot better? Found a bug? Feel free to open an issue in this repository! Contributions and feature requests are always welcome.
 
+## 🙏 Acknowledgments & Credits
+This project would not be possible without the incredible work of the open-source community. Major credits to:
+* **[whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js):** The core library powering the WhatsApp web client integration.
+* **[Puppeteer](https://github.com/puppeteer/puppeteer):** For handling the headless Chromium browser.
+* **[Express.js](https://expressjs.com/):** For powering the local web dashboard.
+* **[Termux](https://termux.dev/):** The ultimate Android terminal emulator environment.
+
 ## 🤖 AI Disclaimer
 The entirety of this project—including the codebase, all documentation (README and LICENSE files)—was developed with the assistance of AI. (I have never used github before so, please understand and apologies)
 
