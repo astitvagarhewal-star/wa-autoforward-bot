@@ -1,9 +1,10 @@
-# Termux WA-Bot 🚀
+# Termux WA-Bot 🚀 <br>![GitHub last commit](https://img.shields.io/github/last-commit/jaival-11/wa-autoforward-bot?style=for-the-badge&color=blue)
 
-A highly resilient, headless WhatsApp bot designed to run natively on Android via Termux. Features a Web UI for easy configuration and a Telegram logging system for network monitoring, critical alerts and status updates
+
+A headless WhatsApp auto forwarding bot designed to run natively on Android via Termux. Features a Web UI for easy configuration and a Telegram logging system for network monitoring, critical alerts and status updates
   
 ## ✨ Features
-(This is not a complete list, I am adding existing features to list with each commit)
+(This may not be a complete list, I am adding existing features to list with each commit)
 
 **🌐 Web UI:** A beautiful, lightweight Express.js dashboard to monitor and configure bot's settings locally on your device. <br>
 **📷 QR code login:** On first time launching the bot, Web UI will show a WhatsApp Web QR code which you need to scan to authorise the bot as a linked device, and perform actions. You can always log out from Web UI, and log in with another account whenever you wish. <br>
@@ -16,7 +17,7 @@ A highly resilient, headless WhatsApp bot designed to run natively on Android vi
 **📶 Network Outage reporting:** Watchdog watches for internet connect every 30s, and if internet connection is not detected it sends a push notification using [Termux:API](https://github.com/termux/termux-api) and suspends heartbeat. When internet connection is restored, watchdog dismisses the push notification and sends telegram log with downtime and timestamps. <br>
 **🩺 Heartbeat:** Termux console prints heartbeat every 10 mins so you know your bot never slept. There is a toggle in Web UI to enable/disable sending heartbeat via telegram bot. <br>
 ​**🔑 Passphrase Auto-Whitelisting:** Allows users to secretly authorize themselves by sending a specific /id [passphrase] command, automatically updating the whitelist without admin intervention. Once authorised, their messages will continue to forward untill removed from whitelist. Telegram bot sends log whenever a new user authorises using the command. Passphrase and passphrase toggle can be configured in Web UI. <br>
-​**🔍 Silent ID Retrieval:** User can send /id command on WhatsApp, and Telegram bot will pass the id information. <br>
+​**🔍 Silent ID Retrieval:** User can send /id command on WhatsApp, and Telegram bot will pass the id information in the log. <br>
 **👻 Ghost Packet & Duplicate filtering:** Intercepts and drops malformed network packets or duplicate event triggers before they can crash the queue, ensuring continued operations.<br>
 **🩹 Error recovery:** Automatically skips deleted messages, or errors occured, doesn't get stuck and continues the operations. <br>
 **🧹 Automated memory optimisation:** Flushes network deduplication cache every hour to keep the script lightweight. <br>
@@ -67,8 +68,21 @@ This project would not be possible without the incredible work of the open-sourc
 This project—including the codebase, all documentation (README and LICENSE files)—was developed with the assistance of AI. (P.s. I am new to this, apologies!)
 
 ## 📜 License
+
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## 🤝 Attribution
+
+This project is open-source and made available under the [MIT License](LICENSE), but I would deeply appreciate visible credit or a link back to this repository in your project or application if you choose to implement it. A little attribution goes a long way!
+
+⭐️ **Support the Project:**
+If you like `wa-autoforward-bot` and found it useful for your workflow, please consider giving this repository a star! It helps others discover the project and motivates further development.
+
 ---
-**Created by Jaival** 🌐 [Follow me on X (Twitter)](https://x.com/techironic11)
+![Static Badge](https://img.shields.io/badge/%F0%9F%8C%90%20Created%20by%20-%20Jaival%20-%20blue?style=for-the-badge&labelColor=&color=blue)
+ <br>
+
+<a href="https://x.com/techironic11" target="_blank"><img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/techironic11?style=for-the-badge&logo=X&labelColor=blue&color=orange">
+</a>
+
 
