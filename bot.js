@@ -1,6 +1,5 @@
 const { exec } = require('child_process');
 const { Client, LocalAuth } = require('whatsapp-web.js');
-const qrcodeTerminal = require('qrcode-terminal');
 const axios = require('axios');
 const FormData = require('form-data');
 const express = require('express');
@@ -559,41 +558,6 @@ client.on('qr', (qr) => {
     }, 1000); 
 });
 
-
-// --- FORCE PURE TERMINAL AUTHENTICATION ---
-client.removeAllListeners('qr'); // Nuke the Web UI QR listener completely
-
-const qrcodeTerminal = require('qrcode-terminal');
-const readlinePair = require('readline');
-const rlPair = readlinePair.createInterface({ input: process.stdin, output: process.stdout });
-
-client.on('qr', (qr) => {
-    console.log('\n==================================================');
-    console.log('🔄 FRESH LOGIN REQUESTED');
-    console.log('==================================================\n');
-    
-    // Force the QR to print to the terminal natively
-    qrcodeTerminal.generate(qr, { small: true });
-
-    setTimeout(() => {
-        console.log('\n==================================================');
-        console.log('📱 CAN\'T SCAN THE QR CODE? LET\'S USE A PAIRING CODE!');
-        console.log('==================================================');
-        rlPair.question('Enter your WhatsApp phone number with country code (e.g., 919876543210): ', async (phone) => {
-            if (phone.trim() !== '') {
-                try {
-                    const pairingCode = await client.requestPairingCode(phone.trim());
-                    console.log('\n✅ YOUR 8-DIGIT PAIRING CODE IS: ' + pairingCode);
-                    console.log('Go to your primary phone: WhatsApp -> Linked Devices -> Link with phone number');
-                } catch (err) {
-                    console.log('\n❌ Failed to get code. Error: ' + err.message);
-                }
-            } else {
-                console.log('Skipping pairing code. Waiting for QR scan...');
-            }
-        });
-    }, 1500); 
-});
 
 client.initialize();
 });

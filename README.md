@@ -45,6 +45,9 @@ Before installing, ensure you have the following ready:
 * **WhatsApp Accounts:** One account to run the bot, and the target chat/group where messages will be forwarded.
 
 ## 🚀 Installation (Termux)
+  
+>If you face any issue in installation feel free to open an issue, or contact me directly (details at the end)  
+
 Copy and paste the below code block into your termux session:
 ```
 # 1. Clone the repository
@@ -81,7 +84,7 @@ Once the bot is running, you don't need to touch the code to manage it.
 Press `Ctrl+C`, and then exit termux by clicking `Release wakelock` and `Exit` on Termux notification.  
 
 **👉 To launch the bot:**  
-To launch the bot, you don't need to do  [Installation](https://github.com/jaival-11/wa-autoforward-bot?tab=readme-ov-file#-installation-termux) again. You need to open termux, and type ``` wa-bot-jaival ``` in home directory (after ` ~ $ `)that's it now wait for few seconds and your bot will start. You will also receive confirmation via Telegram
+To launch the bot, you don't need to do  [Installation](https://github.com/jaival-11/wa-autoforward-bot?tab=readme-ov-file#-installation-termux) again. You just  need to open termux, and type alias ``` wa-bot-jaival ``` and that's it now wait for few seconds and your bot will start. You will also receive confirmation via Telegram
   
 **👉 To update the bot to match latest commit:**
 
@@ -98,30 +101,30 @@ node bot.js
 
 ```
 ## 🐛 Bugs & Feature Requests
-Have an idea to make this bot better? Found a bug? Have any question? Feel free to open an issue in this repository! Contributions and feature requests are always welcome. You can also reach out to me directly (details at end)
+Have an idea to make this bot better? Found a bug? Have any questions? Feel free to open an issue in this repository! Contributions and feature requests are always welcome. You can also reach out to me directly (details at end)
 
 ## 📚 Tech Stack (for nerds):
 
-**Core Environment & Language** ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+**Core Environment & Language:** ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Termux](https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=termux&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-**Backend & Automation** ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+**Backend & Automation:** ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Puppeteer](https://img.shields.io/badge/puppeteer-%2340B5A4.svg?style=for-the-badge&logo=puppeteer&logoColor=white)
 ![Axios](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)
 
-**Web UI** ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+**Web UI:** ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-**APIs & Integrations** ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+**APIs & Integrations:** ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram_Bot_API-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 
 
 ## ⚠️ LEGAL DISCLAIMER & TOS WARNING
 **USE AT YOUR OWN RISK.** This project is for educational and research purposes only. Running automated bots on WhatsApp is a violation of WhatsApp's Terms of Service. Using this software may result in your WhatsApp number being permanently banned. The creator of this software (Jaival) is NOT responsible for any account bans, data loss, or legal repercussions caused by using this code. Always ensure you have the recipient's consent before automated forwarding. This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates. All product names, logos, brands, and other trademarks featured or referred to within this project are the property of their respective trademark holders. These trademark holders are not affiliated with this project or its developers.
   
->**💡 Developer Note:** This project was created to explore the technical side of message forwarding. If you're looking to stay in WhatsApp's good graces, I highly recommend checking out their official Business API instead!
+>**💡 Developer Note:** This project was created to explore the technical side of message forwarding. If you're looking for an official way, I highly recommend checking out their official [Business API](https://business.whatsapp.com/developers/developer-hub) instead!
 
 
 ## 🙏 Acknowledgments & Credits
@@ -133,7 +136,7 @@ This project would not be possible without the incredible work of the open-sourc
 * **[Termux](https://termux.dev/):** The ultimate Android terminal emulator environment.
 * **[Termux:API](https://wiki.termux.com/wiki/Termux:API):** For triggering native Android push notifications during network outages.
 * **[Axios](https://axios-http.com/) & [form-data](https://www.npmjs.com/package/form-data):** For managing the HTTP requests and media payloads sent to Telegram.
-* **[qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal) & [qrcode.js](https://davidshimjs.github.io/qrcodejs/):** For handling QR code generation in both the CLI and the Web UI.
+* **[qrcode.js](https://davidshimjs.github.io/qrcodejs/):** For handling QR code generation in the Web UI.
 * **[Telegram Bot API](https://core.telegram.org/bots/api):** For providing the infrastructure that handles remote network logging and heartbeats.
 
 
